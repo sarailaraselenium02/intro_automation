@@ -1,0 +1,164 @@
+{
+  "id": "0295a671-f3ef-4d73-99e7-8dda63f5c167",
+  "version": "2.0",
+  "name": "sinatra",
+  "url": "https://evening-bastion-49392.herokuapp.com",
+  "tests": [{
+    "id": "f1b3bf66-0a05-4dc3-b033-8edefd396657",
+    "name": "contact",
+    "commands": [{
+      "id": "70f89da2-2213-40f9-aa7c-37544426af0d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcaa5033-678a-472e-980d-18df9ef2ac85",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fbce8000-ac7c-4732-9a33-ba38652d75a1",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=Contact",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "fcb0333c-7cf4-4420-a8d6-3c723f5be677",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Contact",
+      "targets": [
+        ["linkText=Contact", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Contact')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/contact')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Contact')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0475f1a2-1b55-40a3-8ecd-09211a9db981",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d754f2df-7b13-474b-8c16-05119fd85697",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "sara"
+    }, {
+      "id": "2c1eb1bc-044f-4035-a295-4a0377e286e4",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "name=name",
+      "targets": [],
+      "value": "sara"
+    }, {
+      "id": "a6443cc6-66cb-4e78-a28c-2b04443de5a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=form",
+      "targets": [
+        ["css=form", "css:finder"],
+        ["xpath=//form[@action='/contact']", "xpath:attributes"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c94789bb-67cc-4f67-87c5-693350e61493",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18b348d3-56e3-4666-a8b2-7988c03d5da7",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "prueba3@prueba.com"
+    }, {
+      "id": "02265d62-3d2a-40ed-b00f-59091a9f65d0",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "name=email",
+      "targets": [],
+      "value": "prueba3@prueba.com"
+    }, {
+      "id": "1bc5da46-2a3e-4a2b-9e29-6cab24e3e804",
+      "comment": "",
+      "command": "click",
+      "target": "name=message",
+      "targets": [
+        ["name=message", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='message']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a484c2e1-93dc-4af3-8fb8-84875669bd44",
+      "comment": "",
+      "command": "type",
+      "target": "name=message",
+      "targets": [
+        ["name=message", "name"],
+        ["css=textarea", "css:finder"],
+        ["xpath=//textarea[@name='message']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "hola"
+    }, {
+      "id": "8e1c2dc9-397d-40cd-9ef1-aead635be8bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(7)",
+      "targets": [
+        ["css=input:nth-child(7)", "css:finder"],
+        ["xpath=//input[@value='Send Message']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9e86b088-2c74-4914-85c7-362fd52b7764",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f1b3bf66-0a05-4dc3-b033-8edefd396657"]
+  }],
+  "urls": ["https://evening-bastion-49392.herokuapp.com/"],
+  "plugins": []
+}

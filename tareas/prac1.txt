@@ -1,0 +1,48 @@
+<label for="title">Title:</label>
+
+Etiqueta:<label   
+Atributo:for="title"
+Texto: "Title:"
+
+
+<input id="title" name="song[title]" type="text" value="">
+
+Etiqueta: <input 
+Atributo:id="title" name="song[title] type="text" value=""
+Texto:
+
+
+<label for="length">Length:</label>
+
+Etiqueta:  <label
+Atributo: for="length"
+Texto: "Length:"
+
+
+<input id="length" name="song[length]" type="number" value="">
+
+Etiqueta:  <input
+Atributo: id="length" name="song[length]" type="number" value=""
+Texto: 
+
+
+<label for="released_on">Date(mm/dd/yyyy):</label>
+
+Etiqueta:  <label
+Atributo: for="released_on"
+Texto: "Date(mm/dd/yyyy):"
+
+
+<input id="released_on" name="song[released_on]" type="text" value="">
+
+Etiqueta:  <input
+Atributo: id="released_on" name="song[released_on]" type="text" value=""
+Texto: 
+
+
+<label for="lyrics">Lyrics:</label>
+
+Etiqueta:  <label
+Atributo: for="lyrics"
+Texto: "Lyrics:"
+
